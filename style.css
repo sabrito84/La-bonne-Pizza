@@ -15,7 +15,6 @@ body {
 
 #logo {
     width: 200px;
-    margin-bottom: 8px;
 }
 
 #div_for_cut {
@@ -62,6 +61,8 @@ body {
 
 .padding_bottom_3rem {
     padding-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .align_center {
@@ -72,23 +73,48 @@ body {
 
 /* ----- Text ----- */
 
+#h1_location{
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 580px) {
+    #h1_location {
+     font-size: 13vw;
+}}
+
+
+
 #h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 990px) {
+    #h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+#h2 {
+    font-size: 4rem;
     font-weight: 900;
     margin-bottom: 1rem;
 }
 
 @media (max-width: 990px) {
-    #h1 {
-        font-size: 4rem;
+    #h2 {
+        font-size: 3.5rem;
     }
-}
-
-#h2 {
-    font-size: 55px;
-    font-weight: 900;
-    margin-bottom: 1rem;
-
 }
 
 #h3_white {
@@ -107,7 +133,7 @@ body {
 
 .h1_white {
     color: white;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 @media (max-width: 990px) {
@@ -390,6 +416,7 @@ body {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
+    white-space: nowrap;
     
 }
 
@@ -402,7 +429,6 @@ body {
     justify-content: center;
     align-items: top;
     padding-bottom: 0vh;
-    width: 100vw;
     padding-top: 10vh;
 
     background-color: #E93037;
@@ -416,7 +442,8 @@ body {
 }
 
 .center_all2{
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: left;
 }
@@ -485,6 +512,13 @@ body {
     margin-right: auto;
 }
 
+@media (max-width: 990px) {
+    .p2_home {
+        width: 100%;
+
+    }
+}
+
 
 /* --------------------- Section 1 --------------------- */
 
@@ -495,9 +529,14 @@ body {
     margin-top: 10vh;
     padding-bottom: 4rem;
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main_white_1300{
     max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #flex_vertical005{
@@ -531,6 +570,7 @@ body {
     font-size: 2rem;
     font-weight: 800;
     order: 2;
+    padding-top: 0px;
 }
 
 @media (max-width: 600px) {
@@ -550,22 +590,20 @@ body {
 .section_3 {
     display: flex;
     width: 100vw;
+    height: 100vh;
     background-color: #0d0d0d;
 }
-
-@media (max-width: 990px) {
-    .section_3 {
-        display: block;
-    }}
 
 #div_left_3 {
     width: 60%;
     height: 100%;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1050px) {
     .section_3 {
+        display: block;
         width: 100%;
+        height: 40%;
     }}
 
 #div_right_3 {
@@ -574,19 +612,21 @@ body {
     margin-left: 10vw;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1050px) {
     #div_right_3 {
-        width: 80%;
-        padding-top: 4rem;
+        width: 90%;
+        height: 60%;
+        padding-top: 2rem;
         padding-bottom: 4rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }}
 
-#img_man {
-    width: 100%;
-}
+    #img_man {
+        height: 100%;
+    }
 
-@media (max-width: 990px) {
+@media (max-width: 1050px) {
     #img_man {
         width: 100vw;
         height: 60vh;
@@ -597,6 +637,7 @@ body {
 #a_link_white {
     color: white;
     text-decoration: none;
+    align-content: center;
 
 }
 
@@ -618,11 +659,12 @@ body {
 .section_menu {
     align-items: center;
     text-align: center;
-    width: 100vw;
-    max-width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding-bottom: 4rem;
+    padding-top: 2rem;
+    justify-content: center;
+    display: flex;
 
 }
 
@@ -650,6 +692,7 @@ body {
 .menu_top_div {
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    padding-top: 1rem;
 }
 
 @media (max-width: 990px) {
@@ -664,7 +707,7 @@ body {
     background-color: #E93037;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    display: block;
+    display: flex;
     text-align: center;
     justify-content: center;
 }
@@ -679,10 +722,8 @@ body {
 #grid_follow_us {
     display: flex;
     max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #grid_follow_us_25 {
@@ -733,15 +774,17 @@ body {
 #red_cut {
     position: relative;
     bottom: 25px;
+    display: flex;
     width: 100vw;
     overflow-x: hidden;
+    justify-content: left;
 }
 
 #black_cut {
-    position: relative;
     width: 100vw;
     background-color: #E93037;
     overflow-x: hidden;
+
 }
 
 #black_cut_white {
@@ -972,20 +1015,28 @@ body {
     margin-top: 5vh;
     margin-bottom: 0rem;
     white-space: nowrap;
+    text-transform: uppercase;
 }
 
 @media (max-width: 580px) {
     .h1_menu {
      font-size: 13vw;
 
-    }}
+}}
 
 
 .para_menu{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1rem;
     margin-bottom: 2rem;
-
 }
+
+@media (max-width: 990px) {
+    .para_menu {
+     width: 100%;
+}}
 
 .title_product{
     font-size: 2.2rem;
@@ -1134,19 +1185,29 @@ body {
   
   .mobile_nav_link, .mobile_btn_nav {
     display: block;
-    padding: 1rem;
+    font-size: 3.5rem;
     margin-left: 0px;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    margin-bottom: 2rem;
     text-align: center;
     font-weight: 800;
   }
+
+  .btn_order_nav_mobile{
+    background-color: #E93037;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+  }
+  
   
   #menu_toggle {
     display: none; /* Hide by default */
+    font-size: 1.4rem;
   }
-  
+
   @media (max-width: 1000px) {
     #menu_toggle {
       display: block; /* Show the toggle button on small screens */
@@ -1191,8 +1252,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 85vh;
-    margin-top: 2rem;
+    height: 80vh;
+    margin-top: 16vh;
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -1228,7 +1289,7 @@ body {
     margin-left: 0rem;
     margin-right: 0rem;
 
-    }}
+}}
 
 
 .main_interne_footer_double{
@@ -1260,6 +1321,42 @@ body {
     font-weight: 700;
     font-size: 1rem;
     margin-left: 1rem;
+}
+
+/* Add this to your style.css */
+#nav_bar.hide {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#nav_bar.show {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main_location {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (max-width: 990px) {
+    .main_location {
+        padding-bottom: 2rem;
+}}
+
+.interne_location {
+    width: 100vw;
+    max-width: 1300px; 
+    margin: 0 auto; 
+}   
+
+.ifram_card{
+    margin-bottom: 1rem;
 }
 
 

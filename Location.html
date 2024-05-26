@@ -5,38 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap">
 </head>
 <body>
-    <section id="popup_bar">
-        <div class="main_for_pop_up_bar">
-            <div id="popup_div_left">
-                <a id="a_popup1" href="google.com">CALL US: 413-345-982</a>
-            </div>
-            <div id="popup_div_right">
-                <div id="flex_vertical">
-                    <a id="a_popup" href="">ORDER ONLINE:</a>
-                    <div id="popup_icon_orderonline1">
-                        <img src="" alt="">
-                    </div>
-                    <div id="popup_icon_orderonline2">
-                        <img id="icon_pop_up" src="./src/img/one.svg" alt="one.svg">
-                        <img id="icon_pop_up" src="./src/img/two.svg" alt="two.svg">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="nav_bar">
         <div class="main_for_nav">
             <div id="nav_left">
                 <img id="logo" src="./src/img/logo.svg" alt="">
             </div>
             <div id="nav_right">
-                <a href="index.html" id="nav_link">HOME</a>
+                <a href="index.html" id="nav_link">ACCEUIL</a>
                 <a href="menu.html" id="nav_link">MENU</a>
-                <a href="Location.html" id="nav_link">LOCALISATION</a>
+                <a href="" id="nav_link">LOCALISATION</a>
                 <a href="" id="nav_link">CONTACT</a>
                 <a href="tel:+33769889673" class="main_btn_order_nav">
                     <img class="phone_icon" src="./src/img/phone_icon.svg" alt="">
@@ -51,51 +30,25 @@
         <div class="mobile_nav_bar_nav_link">
             <a href="index.html" class="mobile_nav_link">ACCEUIL</a>
             <a href="menu.html" class="mobile_nav_link">MENU</a>
-            <a href="Location.html" class="mobile_nav_link">LOCALISATION</a>
+            <a href="" class="mobile_nav_link">LE LIEU</a>
             <a href="" class="mobile_nav_link">CONTACT</a>
             <button class="btn_order_nav_mobile">COMMANDER</button>
         </div>
     </div>
 
-    <section class="main_section_menu">
-            <h1 id="h1">NOTRE MENU</h1>
-            <p class="para_menu">Des pizzas artisanales aux sandwichs gourmands, en passant par les buckets de poulet et hamburgers, notre menu propose des choix pour tous les goûts et toutes les occasions.</p>
-            <div class="select_categories">
-                <div data-tab-target="#Pizza02" class="select_categories_btn active-btn">Pizza</div>
-                <div data-tab-target="#Hamburgeur" class="select_categories_btn">Hamburgeur</div>
-                <div data-tab-target="#Sandwitch" class="select_categories_btn">Sandwitch</div>
-                <div data-tab-target="#Boisson" class="select_categories_btn">Boisson</div>
-                <div data-tab-target="#Dessert" class="select_categories_btn">Dessert</div>
-            </div>
-            <div class="main_center">
-                <div class="center_grid">
-                    <div id="Pizza02" data-tab-content class="active main_product">
-                        <div class="main_for_h1"><h3>Base Tomate</h3></div>
-                        <div class="grid_for_product" id="Pizza"></div>
-                        <div class="main_pizza_red">
-                            <div class="main_for_h1"><h1>Base Crème</h1></div>
-                            <div class="grid_for_product" id="Pizza2"></div>
-                        </div>
+    <section class="main_location">
+        <div class="main_white_1300">
+            <div class="interne_location">
+                <h1 id="h1_location">Trouver nous</h1>
+                <iframe class="ifram_card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5803.551495185823!2d3.2171464766403575!3d43.33988147263861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b10e5f9ebbe105%3A0xd889479fc5a184f0!2s9%20Av.%20Pr%C3%A9sident%20Wilson%2C%2034500%20B%C3%A9ziers!5e0!3m2!1sfr!2sfr!4v1716727655622!5m2!1sfr!2sfr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="flex_vertical">
+                    <div id="div_btn_menu_for_center">
+                        <a id="btn_order_big" class="double_button">COMMANDER</a>
+                        <a href="menu.html" id="btn_order_black">VOIR LE MENU</a>
                     </div>
-                    <div data-tab-content id="Hamburgeur" class="main_tab">
-                        <div class="main_for_h1"><h3>Hamburgeur</h3></div>
-                        <div id="Hamburgeur_toAdd" class="grid_for_product"></div>
-                    </div>
-                    <div data-tab-content id="Sandwitch" class="main_tab">
-                        <div class="main_for_h1"><h3>Sandwitch</h3></div>
-                        <div id="Sandwitch_toAdd" class="grid_for_product"></div>
-                    </div>
-                    <div data-tab-content id="Boisson" class="main_tab">
-                        <div class="main_for_h1"><h3>Boisson</h3></div>
-                        <div id="Boisson_toAdd" class="grid_for_product"></div>
-                    </div>
-                    <div data-tab-content id="Dessert" class="main_tab">
-                        <div class="main_for_h1"><h3>Dessert</h3></div>
-                        <div id="Dessert_toAdd" class="grid_for_product" ></div>
-                    </div>
-
                 </div>
             </div>
+         </div>
     </section>
 
     <div id="black_cut_white">
@@ -142,15 +95,12 @@
                     <div id="interne_footer_grid">
                         <img id="footer_img" src="./src/img/footer3.jpg" alt="">
                         <img id="footer_img" src="./src/img/footer4.jpg" alt="">
-
                     </div>
                 </div>
 
             </div>
         </section>
     </div>
-
-    <script src="script.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
